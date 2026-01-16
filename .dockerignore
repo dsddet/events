@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Angular cache
+.angular/
+
+# Test coverage
+coverage/
+
+# Misc
+*.md
+*.log
+.DS_Store
+Thumbs.db
