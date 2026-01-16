@@ -1,0 +1,21 @@
+# ArgoCD Image Updater CR for automatic image updates
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: events-updater
+  namespace: argocd
+spec:
+  namespace: argocd
+  commonUpdateSettings:
+    updateStrategy: digest
+    pullSecret: argocd/ghcr-credentials#token
+  writeBackConfig:
+    method: argocd
+  applicationRefs:
+    - namePattern: "events"
+      images:
+        - alias: events
+          imageName: ghcr.io/dsddet/events:dev-latest
+          commonUpdateSettings:
+            updateStrategy: digest
+            allowTags: "regexp:^dev-latest$"
