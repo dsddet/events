@@ -1,93 +1,201 @@
 <main class="container">
   <mat-toolbar class="navbar" color="primary">
-    <span class="nav-brand">DL</span>
+    <span class="nav-brand">SHE</span>
     <span class="spacer"></span>
     <a mat-button href="#about">About</a>
-    <a mat-button href="#skills">Skills</a>
-    <a mat-button href="#projects">Projects</a>
+    <a mat-button href="#solutions">Solutions</a>
+    <a mat-button href="#services">Services</a>
     <a mat-button href="#contact">Contact</a>
   </mat-toolbar>
 
   <header>
     <div class="hero-content">
       <h1>Smart Home Engineering</h1>
+      <p class="tagline">Self-Hosted Solutions for the Modern Home</p>
     </div>
   </header>
 
   <section class="hero" id="about">
     <div class="hero-content">
-      <p>A Software enthusiast with 10+ years of development experience, building distributed systems, real-time
-        data pipelines, and cloud-native applications.</p>
+      <p>Take control of your digital life with professional homelab solutions. We help you build secure,
+        private, and powerful self-hosted infrastructure — from media servers to smart home automation,
+        network security to cloud storage alternatives.</p>
       <mat-chip-set id="skills" class="badges">
-        <mat-chip highlighted>Java</mat-chip>
-        <mat-chip highlighted>Python</mat-chip>
-        <mat-chip highlighted>TypeScript</mat-chip>
-        <mat-chip highlighted>SQL</mat-chip>
-        <mat-chip highlighted>Spring Boot</mat-chip>
-        <mat-chip highlighted>Angular</mat-chip>
-        <mat-chip highlighted>Node.js</mat-chip>
-        <mat-chip highlighted>AWS</mat-chip>
-        <mat-chip highlighted>GCP</mat-chip>
-        <mat-chip highlighted>Kubernetes</mat-chip>
+        <mat-chip highlighted>Proxmox</mat-chip>
         <mat-chip highlighted>Docker</mat-chip>
-        <mat-chip highlighted>Terraform</mat-chip>
-        <mat-chip highlighted>Apache Kafka</mat-chip>
-        <mat-chip highlighted>PostgreSQL</mat-chip>
-        <mat-chip highlighted>MongoDB</mat-chip>
+        <mat-chip highlighted>Kubernetes</mat-chip>
+        <mat-chip highlighted>Unraid</mat-chip>
+        <mat-chip highlighted>TrueNAS</mat-chip>
+        <mat-chip highlighted>Home Assistant</mat-chip>
+        <mat-chip highlighted>Nextcloud</mat-chip>
+        <mat-chip highlighted>Jellyfin</mat-chip>
+        <mat-chip highlighted>Pi-hole</mat-chip>
+        <mat-chip highlighted>Tailscale</mat-chip>
+        <mat-chip highlighted>WireGuard</mat-chip>
+        <mat-chip highlighted>Nginx Proxy Manager</mat-chip>
       </mat-chip-set>
     </div>
   </section>
 
-  <section class="info" id="projects">
-    <mat-card appearance="outlined" class="project-card">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>rocket_launch</mat-icon>
-        <mat-card-title>Automatic Deployments</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>Push to main branch triggers automatic build and deployment.</p>
-      </mat-card-content>
-    </mat-card>
+  <section class="solutions" id="solutions">
+    <h2 class="section-title">Essential Homelab Solutions</h2>
+    <div class="solutions-grid">
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>dns</mat-icon>
+          <mat-card-title>Virtualization Platform</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Run multiple operating systems on a single server with Proxmox or Unraid. Maximize hardware efficiency with enterprise-grade virtualization.</p>
+        </mat-card-content>
+      </mat-card>
 
-    <mat-card appearance="outlined" class="project-card">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>inventory_2</mat-icon>
-        <mat-card-title>Container Registry</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>Images published to ghcr.io/dsddet/events:dev-latest</p>
-      </mat-card-content>
-    </mat-card>
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>cloud</mat-icon>
+          <mat-card-title>Private Cloud Storage</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Replace Google Drive and Dropbox with Nextcloud. Store, sync, and share files across all your devices with complete privacy.</p>
+        </mat-card-content>
+      </mat-card>
 
-    <mat-card appearance="outlined" class="project-card">
-      <mat-card-header>
-        <mat-icon mat-card-avatar>sync</mat-icon>
-        <mat-card-title>GitOps</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>ArgoCD Image Updater detects new images and deploys automatically.</p>
-      </mat-card-content>
-    </mat-card>
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>movie</mat-icon>
+          <mat-card-title>Media Server</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Stream your media library anywhere with Jellyfin or Plex. Organize movies, TV shows, and music with automatic metadata.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>photo_library</mat-icon>
+          <mat-card-title>Photo Management</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Self-host your photos with Immich. Mobile backups, facial recognition, location maps — a complete Google Photos replacement.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>shield</mat-icon>
+          <mat-card-title>Network Security</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Block ads and trackers network-wide with Pi-hole. Secure remote access with Tailscale or WireGuard VPN.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>home</mat-icon>
+          <mat-card-title>Smart Home Hub</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Unify 2000+ smart home brands with Home Assistant. Create powerful automations without cloud dependencies.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>videocam</mat-icon>
+          <mat-card-title>Surveillance & NVR</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Self-hosted video recording with Frigate. AI-powered object detection keeps your footage private and searchable.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>monitoring</mat-icon>
+          <mat-card-title>Monitoring & Uptime</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Track service health with Uptime Kuma. Get instant alerts when services go down with a beautiful dashboard.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="solution-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>lock</mat-icon>
+          <mat-card-title>Password Management</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Secure credentials with Vaultwarden. Store passwords, API keys, and MFA tokens with full control over your data.</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="info" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <mat-card appearance="outlined" class="project-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>build</mat-icon>
+          <mat-card-title>Homelab Setup</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Complete installation and configuration of your homelab infrastructure from hardware selection to service deployment.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="project-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>support</mat-icon>
+          <mat-card-title>Ongoing Support</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Maintenance, updates, and troubleshooting to keep your self-hosted services running smoothly 24/7.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card appearance="outlined" class="project-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>school</mat-icon>
+          <mat-card-title>Training & Consulting</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Learn to manage your own homelab with hands-on training and expert consulting for your specific needs.</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
   </section>
 
   <footer id="contact">
     <div class="footer-content">
       <div class="footer-section">
-        <h4>Services</h4>
+        <h4>Solutions</h4>
         <ul class="footer-links">
-          <li><a href="#cloud">Cloud Architecture</a></li>
-          <li><a href="#data">Data Engineering</a></li>
-          <li><a href="#devops">DevOps & CI/CD</a></li>
-          <li><a href="#ai">AI/ML Solutions</a></li>
+          <li><a href="#virtualization">Virtualization</a></li>
+          <li><a href="#storage">Cloud Storage</a></li>
+          <li><a href="#media">Media Servers</a></li>
+          <li><a href="#security">Network Security</a></li>
+          <li><a href="#automation">Smart Home</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Technologies</h4>
         <ul class="footer-links">
-          <li><a href="#aws">AWS & GCP</a></li>
-          <li><a href="#k8s">Kubernetes</a></li>
-          <li><a href="#kafka">Apache Kafka</a></li>
-          <li><a href="#terraform">Terraform</a></li>
+          <li><a href="#proxmox">Proxmox & Unraid</a></li>
+          <li><a href="#docker">Docker & K8s</a></li>
+          <li><a href="#homeassistant">Home Assistant</a></li>
+          <li><a href="#networking">Tailscale & WireGuard</a></li>
+          <li><a href="#monitoring">Uptime Kuma</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="#guides">Setup Guides</a></li>
+          <li><a href="#hardware">Hardware Recommendations</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -97,11 +205,7 @@
           <li><a href="https://linkedin.com/in/deusdedit" target="_blank" rel="noopener">LinkedIn</a></li>
           <li><a href="mailto:contact@example.com">Email</a></li>
         </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Contact</h4>
-        <p>Available for consulting, contract work, and collaboration opportunities.</p>
-        <a mat-flat-button class="cta-button" href="mailto:contact@example.com">Get in Touch</a>
+        <a mat-flat-button class="cta-button" href="mailto:contact@example.com">Get a Quote</a>
       </div>
     </div>
     <div class="footer-bottom">
