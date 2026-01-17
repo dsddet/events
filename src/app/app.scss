@@ -16,10 +16,18 @@
   backdrop-filter: blur(10px);
 
   .nav-brand {
-    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.02em;
     color: white;
+
+    .nav-logo {
+      height: 36px;
+      width: auto;
+    }
   }
 
   .spacer {
