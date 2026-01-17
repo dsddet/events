@@ -112,3 +112,115 @@ footer {
     font-weight: 600;
   }
 }
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+    }
+  }
+
+  .hero {
+    padding: 1.5rem 1rem;
+    align-items: flex-start;
+
+    .hero-content {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .badges {
+    gap: 0.5rem;
+
+    .badge {
+      padding: 0.4rem 0.75rem;
+      font-size: 0.75rem;
+      flex: 0 1 auto;
+      max-width: none;
+    }
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+
+    .card {
+      padding: 1.25rem;
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1.5rem 0.75rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .hero {
+    padding: 1rem 0.75rem;
+
+    .hero-content {
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .badges {
+    gap: 0.4rem;
+
+    .badge {
+      padding: 0.35rem 0.6rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  .info {
+    padding: 1rem 0.75rem;
+
+    .card {
+      padding: 1rem;
+    }
+  }
+
+  footer {
+    padding: 1rem 0.75rem;
+  }
+}
