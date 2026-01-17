@@ -18,11 +18,8 @@
   .nav-brand {
     font-size: 1.75rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
-    background: linear-gradient(90deg, #ffffff, #e0e7ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: 0.02em;
+    color: white;
   }
 
   .spacer {
@@ -63,9 +60,25 @@ header {
 .section-title {
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
-  margin: 0 0 2rem 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 4rem 0;
   color: white;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .hero {
@@ -91,11 +104,13 @@ header {
 }
 
 .badges {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   gap: 0.75rem;
-  justify-content: center;
+  justify-content: center !important;
+  align-items: center;
   margin-top: 1.5rem;
+  width: 100%;
 
   mat-chip {
     --mdc-chip-elevated-container-color: rgba(255, 255, 255, 0.15);
@@ -103,6 +118,54 @@ header {
     --mdc-chip-with-icon-icon-color: white;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.gallery {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gallery-item {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
   }
 }
 
@@ -338,11 +401,28 @@ footer {
     }
   }
 
+  .hero-image {
+    padding: 0 1rem;
+
+    img {
+      height: 200px;
+    }
+  }
+
   .badges {
     gap: 0.5rem;
 
     mat-chip {
       font-size: 0.8rem;
+    }
+  }
+
+  .gallery {
+    padding: 2rem 1rem;
+
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
   }
 
@@ -411,11 +491,33 @@ footer {
     }
   }
 
+  .hero-image {
+    padding: 0 0.75rem;
+
+    img {
+      height: 150px;
+    }
+  }
+
   .badges {
     gap: 0.4rem;
 
     mat-chip {
       font-size: 0.7rem;
+    }
+  }
+
+  .gallery {
+    padding: 1.5rem 0.75rem;
+
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .gallery-item span {
+      font-size: 0.75rem;
+      padding: 0.75rem;
     }
   }
 
