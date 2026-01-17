@@ -30,10 +30,12 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  width: 100%;
 
   .hero-content {
     text-align: center;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1200px;
 
     h2 {
       font-size: 2rem;
@@ -54,6 +56,7 @@ header {
   gap: 0.75rem;
   justify-content: center;
   margin-top: 1.5rem;
+  width: 100%;
 
   .badge {
     background: rgba(255, 255, 255, 0.2);
@@ -61,6 +64,10 @@ header {
     border-radius: 2rem;
     font-size: 0.875rem;
     backdrop-filter: blur(10px);
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: fit-content;
+    max-width: 200px;
   }
 }
 
