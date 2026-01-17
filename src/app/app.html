@@ -1,87 +1,118 @@
 <main class="container">
-<!--  <header>-->
-<!--  <div class="hero-content">-->
-<!--    <h1>DEUSDEDIT LUTWAMA</h1>-->
-<!--    </div>-->
-<!--&lt;!&ndash;    <p class="tagline">Your event management platform</p>&ndash;&gt;-->
-<!--  </header>-->
+  <mat-toolbar class="navbar" color="primary">
+    <span class="nav-brand">DL</span>
+    <span class="spacer"></span>
+    <a mat-button href="#about">About</a>
+    <a mat-button href="#skills">Skills</a>
+    <a mat-button href="#projects">Projects</a>
+    <a mat-button href="#contact">Contact</a>
+  </mat-toolbar>
 
-  <section class="hero">
+  <header>
     <div class="hero-content">
-      <h2>Cloud Data Engineer</h2>
+      <h1>Smart Home Engineering</h1>
+    </div>
+  </header>
+
+  <section class="hero" id="about">
+    <div class="hero-content">
       <p>A Software enthusiast with 10+ years of development experience, building distributed systems, real-time
-        data pipelines, and cloud-native applications. </p>
-      <div class="badges">
-        <span class="badge">Java</span>
-        <span class="badge">Python</span>
-        <span class="badge">TypeScript</span>
-        <span class="badge">SQL</span>
-        <span class="badge">Bash</span>
-        <span class="badge">Spring Boot</span>
-        <span class="badge">Spring Security</span>
-        <span class="badge">Angular</span>
-        <span class="badge">Hibernate</span>
-        <span class="badge">Node.js</span>
-        <span class="badge">FastAPI</span>
-        <span class="badge">LangChain</span>
-        <span class="badge">LangGraph</span>
-        <span class="badge">OpenAI</span>
-        <span class="badge">FAISS</span>
-        <span class="badge">Claude Code</span>
-        <span class="badge">Claude Desktop</span>
-        <span class="badge">MCP Toolkit</span>
-        <span class="badge">RAG</span>
-        <span class="badge">Docker</span>
-        <span class="badge">Terraform</span>
-        <span class="badge">Git</span>
-        <span class="badge">Ansible</span>
-        <span class="badge">Maven</span>
-        <span class="badge">Gradle</span>
-        <span class="badge">Localstack</span>
-        <span class="badge">Postman</span>
-        <span class="badge">GitHub Actions</span>
-        <span class="badge">Concourse</span>
-        <span class="badge">Bamboo</span>
-        <span class="badge">Jenkins</span>
-        <span class="badge">AWS</span>
-        <span class="badge">GCP</span>
-        <span class="badge">Kubernetes</span>
-        <span class="badge">Confluent Cloud</span>
-        <span class="badge">Apache Kafka</span>
-        <span class="badge">Kafka Streams</span>
-        <span class="badge">KSQL</span>
-        <span class="badge">AWS Kinesis</span>
-        <span class="badge">GCP Pub/Sub</span>
-        <span class="badge">New Relic</span>
-        <span class="badge">Splunk</span>
-        <span class="badge">Prometheus</span>
-        <span class="badge">Grafana</span>
-        <span class="badge">PostgreSQL</span>
-        <span class="badge">SQL Server</span>
-        <span class="badge">MongoDB</span>
-        <span class="badge">DynamoDB</span>
-        <span class="badge">BigQuery</span>
+        data pipelines, and cloud-native applications.</p>
+      <mat-chip-set id="skills" class="badges">
+        <mat-chip highlighted>Java</mat-chip>
+        <mat-chip highlighted>Python</mat-chip>
+        <mat-chip highlighted>TypeScript</mat-chip>
+        <mat-chip highlighted>SQL</mat-chip>
+        <mat-chip highlighted>Spring Boot</mat-chip>
+        <mat-chip highlighted>Angular</mat-chip>
+        <mat-chip highlighted>Node.js</mat-chip>
+        <mat-chip highlighted>AWS</mat-chip>
+        <mat-chip highlighted>GCP</mat-chip>
+        <mat-chip highlighted>Kubernetes</mat-chip>
+        <mat-chip highlighted>Docker</mat-chip>
+        <mat-chip highlighted>Terraform</mat-chip>
+        <mat-chip highlighted>Apache Kafka</mat-chip>
+        <mat-chip highlighted>PostgreSQL</mat-chip>
+        <mat-chip highlighted>MongoDB</mat-chip>
+      </mat-chip-set>
+    </div>
+  </section>
+
+  <section class="info" id="projects">
+    <mat-card appearance="outlined" class="project-card">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>rocket_launch</mat-icon>
+        <mat-card-title>Automatic Deployments</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Push to main branch triggers automatic build and deployment.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card appearance="outlined" class="project-card">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>inventory_2</mat-icon>
+        <mat-card-title>Container Registry</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Images published to ghcr.io/dsddet/events:dev-latest</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card appearance="outlined" class="project-card">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>sync</mat-icon>
+        <mat-card-title>GitOps</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>ArgoCD Image Updater detects new images and deploys automatically.</p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#cloud">Cloud Architecture</a></li>
+          <li><a href="#data">Data Engineering</a></li>
+          <li><a href="#devops">DevOps & CI/CD</a></li>
+          <li><a href="#ai">AI/ML Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Technologies</h4>
+        <ul class="footer-links">
+          <li><a href="#aws">AWS & GCP</a></li>
+          <li><a href="#k8s">Kubernetes</a></li>
+          <li><a href="#kafka">Apache Kafka</a></li>
+          <li><a href="#terraform">Terraform</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://github.com/dsddet" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/deusdedit" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:contact@example.com">Email</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Available for consulting, contract work, and collaboration opportunities.</p>
+        <a mat-flat-button class="cta-button" href="mailto:contact@example.com">Get in Touch</a>
       </div>
     </div>
-  </section>
-
-  <section class="info">
-    <div class="card">
-      <h3>Automatic Deployments</h3>
-      <p>Push to main branch triggers automatic build and deployment.</p>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 Smart Home Engineering. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h3>Container Registry</h3>
-      <p>Images published to ghcr.io/dsddet/events:dev-latest</p>
-    </div>
-    <div class="card">
-      <h3>GitOps</h3>
-      <p>ArgoCD Image Updater detects new images and deploys automatically.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>Deployed at <strong>events.brothersbit.com</strong></p>
   </footer>
 </main>
 
