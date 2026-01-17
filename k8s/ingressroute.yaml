@@ -15,8 +15,7 @@ spec:
     - match: Host(`events.brothersbit.com`)
       kind: Rule
       middlewares:
-        - name: app-headers
-          namespace: dev-slots
+        - name: dev-headers
       services:
         - name: events
           port: 80
