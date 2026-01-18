@@ -1,0 +1,27 @@
+# Kubernetes Ingress for k8s-gateway DNS discovery
+# Enables split-horizon DNS - local clients resolve to cluster IP
+# TLS handled by Traefik TLSStore default wildcard certificate
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: events-ingress
+  namespace: dev-slots
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: events.brothersbit.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: events
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - events.brothersbit.com
