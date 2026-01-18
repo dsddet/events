@@ -4,7 +4,7 @@ metadata:
   name: events-ingressroute
   annotations:
     # ExternalDNS creates DNS record in Cloudflare
-    external-dns.alpha.kubernetes.io/hostname: events.brothersbit.com
+    external-dns.alpha.kubernetes.io/hostname: dashboard.brothersbit.com
     external-dns.alpha.kubernetes.io/target: e4bdc38e-7bd6-4f39-b48b-9a0f2b762887.cfargotunnel.com
     external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
 spec:
@@ -12,7 +12,7 @@ spec:
     - web
     - websecure
   routes:
-    - match: Host(`events.brothersbit.com`)
+    - match: Host(`dashboard.brothersbit.com`)
       kind: Rule
       middlewares:
         - name: dev-headers
