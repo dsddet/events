@@ -12,7 +12,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: events.brothersbit.com
+    - host: dashboard.brothersbit.com
       http:
         paths:
           - path: /
@@ -24,4 +24,4 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - events.brothersbit.com
+        - dashboard.brothersbit.com
