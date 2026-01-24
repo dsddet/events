@@ -15,7 +15,10 @@ spec:
     - match: Host(`dashboard.brothersbit.com`)
       kind: Rule
       middlewares:
+        - name: crowdsec-bouncer
+          namespace: crowdsec
         - name: dev-headers
+          namespace: dev-slots
       services:
         - name: events
           port: 80
